@@ -1,0 +1,153 @@
+{\rtf1\ansi \deff1{\fonttbl{\f1\fmodern\fprq1\fcharset0 Consolas;}}{\colortbl;\red238\green238\blue238;\red00\green00\blue00;\red166\green133\blue00;\red128\green00\blue128;\red242\green121\blue00;\red255\green128\blue00;\red255\green00\blue255;\red00\green128\blue192;\red00\green00\blue255;\red48\green48\blue48;\red255\green00\blue128;\red158\green93\blue255;\red187\green121\blue119;\red128\green128\blue192;\red00\green128\blue192;\red00\green68\blue102;}
+\paperw11905\paperh16837\margl1134\margr1134\margt1134\margb1134\sectd\plain\f1\fs20
+\pard \cbpat1{{\cf2{}}{\cf8{\b #include <iostream>  \b0 }}}\par\pard
+\cbpat1{{\cf2{}}{\cf8{\b #include <string>  \b0 }}}\par\pard
+\cbpat1{{\cf2{}}{\cf8{\b #include <cstring>  \b0 }}}\par\pard
+\cbpat1{{\cf2{}}{\cf13{\b using namespace\b0 }} {\cf2{std}}{\cf11{\b ;\b0 }}}\par\pard
+\cbpat1{{\cf2{}}{\cf15{class}} {\cf2{Graduate}} {\cf11{\b \{\b0 }}}\par\pard
+\cbpat1{{\cf2{}}{\cf15{private}}{\cf2{}}{\cf11{\b :\b0 }} }\par\pard
+\cbpat1{{\cf2{}}	{\cf14{\b bool\b0 }} {\cf2{gender}}{\cf11{\b ;\b0 }} {\cf2{}}{\cf5{// {1} \u272?  {0} \u366?}}}\par\pard
+\cbpat1{{\cf2{}}	{\cf14{\b char\b0 }}{\cf2{}}{\cf11{\b *\b0 }} {\cf2{name}}{\cf11{\b ;\b0 }} }\par\pard
+\cbpat1{{\cf2{}}	{\cf14{\b char\b0 }} {\cf2{id}}{\cf11{\b [\b0 }}{\cf2{}}{\cf4{\b {2}{0}\b0 }}{\cf2{}}{\cf11{\b ];\b0 }}}\par\pard
+\cbpat1{{\cf2{}}	{\cf14{\b const double\b0 }} {\cf2{score}}{\cf11{\b ;\b0 }}}\par\pard
+\cbpat1{{\cf2{	string research}}{\cf11{\b ;\b0 }} }\par\pard
+\cbpat1{{\cf2{	string tutor}}{\cf11{\b ;\b0 }} }\par\pard
+\cbpat1{{\cf2{}}	{\cf14{\b static int\b0 }} {\cf2{total_score}}{\cf11{\b ;\b0 }}}\par\pard
+\cbpat1{{\cf2{}}{\cf15{public}}{\cf2{}}{\cf11{\b :\b0 }} }\par\pard
+\cbpat1{{\cf2{}}	{\cf16{Graduate}}{\cf2{}}{\cf11{\b ();\b0 }} }\par\pard
+\cbpat1{{\cf2{}}	{\cf16{Graduate}}{\cf2{}}{\cf11{\b (\b0 }}{\cf2{}}{\cf14{\b bool\b0 }} {\cf2{gender}}{\cf11{\b ,\b0 }} {\cf2{}}{\cf14{\b char\b0 }}{\cf2{}}{\cf11{\b *\b0 }} {\cf2{name}}{\cf11{\b ,\b0 }} {\cf2{}}{\cf14{\b char\b0 }} {\cf2{id}}{\cf11{\b [],\b0 }} {\cf2{}}{\cf14{\b const double\b0 }} {\cf2{score{1}}}{\cf11{\b ,\b0 }} {\cf2{string research}}{\cf11{\b ,\b0 }} {\cf2{string tutor}}{\cf11{\b );\b0 }} }\par\pard
+\cbpat1{{\cf2{}}	{\cf16{Graduate}}{\cf2{}}{\cf11{\b (\b0 }}{\cf2{}}{\cf14{\b const\b0 }} {\cf2{Graduate}}{\cf11{\b &\b0 }} {\cf2{tmp}}{\cf11{\b );\b0 }} }\par\pard
+\cbpat1{{\cf2{}}	{\cf11{\b ~\b0 }}{\cf2{}}{\cf16{Graduate}}{\cf2{}}{\cf11{\b ();\b0 }}}\par\pard
+\cbpat1{{\cf2{}}	{\cf14{\b void\b0 }} {\cf2{}}{\cf16{Display_Name}}{\cf2{}}{\cf11{\b ();\b0 }}}\par\pard
+\cbpat1{{\cf2{}}	{\cf14{\b void\b0 }} {\cf2{}}{\cf16{Display_Gender}}{\cf2{}}{\cf11{\b ();\b0 }}}\par\pard
+\cbpat1{{\cf2{}}	{\cf14{\b void\b0 }} {\cf2{}}{\cf16{Display_Id}}{\cf2{}}{\cf11{\b ();\b0 }} }\par\pard
+\cbpat1{{\cf2{}}	{\cf14{\b void\b0 }} {\cf2{}}{\cf16{Display_Score}}{\cf2{}}{\cf11{\b ();\b0 }}}\par\pard
+\cbpat1{{\cf2{}}	{\cf14{\b void\b0 }} {\cf2{}}{\cf16{Display_research}}{\cf2{}}{\cf11{\b ();\b0 }} }\par\pard
+\cbpat1{{\cf2{}}	{\cf14{\b void\b0 }} {\cf2{}}{\cf16{Display_tutor}}{\cf2{}}{\cf11{\b ();\b0 }} }\par\pard
+\cbpat1{{\cf2{}}	{\cf14{\b void\b0 }} {\cf2{}}{\cf16{Display_Name}}{\cf2{}}{\cf11{\b ()\b0 }}{\cf2{}}{\cf14{\b const\b0 }}{\cf2{}}{\cf11{\b ;\b0 }}  }\par\pard
+\cbpat1{{\cf2{}}	{\cf14{\b void\b0 }} {\cf2{}}{\cf16{Display_Gender}}{\cf2{}}{\cf11{\b ()\b0 }}{\cf2{}}{\cf14{\b const\b0 }}{\cf2{}}{\cf11{\b ;\b0 }} }\par\pard
+\cbpat1{{\cf2{}}	{\cf14{\b void\b0 }} {\cf2{}}{\cf16{Display_Id}}{\cf2{}}{\cf11{\b ()\b0 }}{\cf2{}}{\cf14{\b const\b0 }}{\cf2{}}{\cf11{\b ;\b0 }}}\par\pard
+\cbpat1{{\cf2{}}	{\cf14{\b void\b0 }} {\cf2{}}{\cf16{Display_Score}}{\cf2{}}{\cf11{\b ()\b0 }}{\cf2{}}{\cf14{\b const\b0 }}{\cf2{}}{\cf11{\b ;\b0 }} }\par\pard
+\cbpat1{{\cf2{}}	{\cf14{\b void\b0 }} {\cf2{}}{\cf16{Display_research}}{\cf2{}}{\cf11{\b ()\b0 }}{\cf2{}}{\cf14{\b const\b0 }}{\cf2{}}{\cf11{\b ;\b0 }} }\par\pard
+\cbpat1{{\cf2{}}	{\cf14{\b void\b0 }} {\cf2{}}{\cf16{Display_tutor}}{\cf2{}}{\cf11{\b ()\b0 }}{\cf2{}}{\cf14{\b const\b0 }}{\cf2{}}{\cf11{\b ;\b0 }}}\par\pard
+\cbpat1{{\cf2{}}	{\cf14{\b static void\b0 }} {\cf2{}}{\cf16{Display_total_score}}{\cf2{}}{\cf11{\b ();\b0 }}}\par\pard
+\cbpat1{{\cf2{}}	{\cf15{friend}} {\cf2{}}{\cf14{\b void\b0 }} {\cf2{}}{\cf16{Display_rank}}{\cf2{}}{\cf11{\b (\b0 }}{\cf2{}}{\cf14{\b const\b0 }} {\cf2{Graduate}}{\cf11{\b &\b0 }} {\cf2{tmp}}{\cf11{\b );\b0 }} }\par\pard
+\cbpat1{{\cf2{}}{\cf11{\b \};\b0 }} }\par\pard
+\cbpat1{{\cf2{}}{\cf14{\b int\b0 }} {\cf2{}}{\cf16{main}}{\cf2{}}{\cf11{\b () \{\b0 }}}\par\pard
+\cbpat1{{\cf2{}}	{\cf14{\b bool\b0 }} {\cf2{gender}} {\cf11{\b =\b0 }} {\cf2{}}{\cf4{\b {1}\b0 }}{\cf2{}}{\cf11{\b ;\b0 }}}\par\pard
+\cbpat1{{\cf2{}}	{\cf14{\b char\b0 }}{\cf2{}}{\cf11{\b *\b0 }} {\cf2{name}} {\cf11{\b = (\b0 }}{\cf2{}}{\cf14{\b char\b0 }}{\cf2{}}{\cf11{\b *)\b0 }}{\cf2{}}{\cf3{"xue"}}{\cf2{}}{\cf11{\b ;\b0 }}}\par\pard
+\cbpat1{{\cf2{}}	{\cf14{\b char\b0 }} {\cf2{id}}{\cf11{\b [\b0 }}{\cf2{}}{\cf4{\b {2}{0}\b0 }}{\cf2{}}{\cf11{\b ] =\b0 }} {\cf2{}}{\cf3{"{2}{0}{1}{8}{1}{1}{0}{2}{0}{1}{0}{4}"}}{\cf2{}}{\cf11{\b ;\b0 }} }\par\pard
+\cbpat1{{\cf2{}}	{\cf14{\b const double\b0 }} {\cf2{score}} {\cf11{\b =\b0 }} {\cf2{}}{\cf4{\b {1}{0}{0}\b0 }}{\cf2{}}{\cf11{\b ;\b0 }}}\par\pard
+\cbpat1{{\cf2{	string research}} {\cf11{\b =\b0 }} {\cf2{}}{\cf3{"Computer science"}}{\cf2{}}{\cf11{\b ;\b0 }} }\par\pard
+\cbpat1{{\cf2{	string tutor}} {\cf11{\b =\b0 }} {\cf2{}}{\cf3{"Xiaoming"}}{\cf2{}}{\cf11{\b ;\b0 }} }\par\pard
+\cbpat1{{\cf2{	Graduate}} {\cf16{a}}{\cf2{}}{\cf11{\b (\b0 }}{\cf2{gender}}{\cf11{\b ,\b0 }} {\cf2{name}}{\cf11{\b ,\b0 }} {\cf2{id}}{\cf11{\b ,\b0 }} {\cf2{score}}{\cf11{\b ,\b0 }} {\cf2{research}}{\cf11{\b ,\b0 }} {\cf2{tutor}}{\cf11{\b );\b0 }} }\par\pard
+\cbpat1{{\cf2{	Graduate}} {\cf16{b}}{\cf2{}}{\cf11{\b (\b0 }}{\cf2{a}}{\cf11{\b );\b0 }} }\par\pard
+\cbpat1{{\cf2{	Graduate c}}{\cf11{\b ;\b0 }} }\par\pard
+\cbpat1{{\cf2{	a}}{\cf11{\b .\b0 }}{\cf2{}}{\cf16{Display_Name}}{\cf2{}}{\cf11{\b ();\b0 }} }\par\pard
+\cbpat1{{\cf2{}}	{\cf15{Graduate}}{\cf2{}}{\cf11{\b ::\b0 }}{\cf2{}}{\cf16{Display_total_score}}{\cf2{}}{\cf11{\b ();\b0 }} }\par\pard
+\cbpat1{{\cf2{}}	{\cf16{Display_rank}}{\cf2{}}{\cf11{\b (\b0 }}{\cf2{a}}{\cf11{\b );\b0 }} }\par\pard
+\cbpat1{{\cf2{}}	{\cf13{\b return\b0 }} {\cf2{}}{\cf4{\b {0}\b0 }}{\cf2{}}{\cf11{\b ;\b0 }} }\par\pard
+\cbpat1{{\cf2{}}	{\cf14{\b int\b0 }} {\cf2{}}{\cf15{Graduate}}{\cf2{}}{\cf11{\b ::\b0 }}{\cf2{total_score}} {\cf11{\b =\b0 }} {\cf2{}}{\cf4{\b {0}\b0 }}{\cf2{}}{\cf11{\b ;\b0 }}}\par\pard
+\cbpat1{{\cf2{}}	{\cf15{Graduate}}{\cf2{}}{\cf11{\b ::\b0 }}{\cf2{}}{\cf16{Graduate}}{\cf2{}}{\cf11{\b () :\b0 }}{\cf2{}}{\cf16{score}}{\cf2{}}{\cf11{\b (-\b0 }}{\cf2{}}{\cf4{\b {1}\b0 }}{\cf2{}}{\cf11{\b )\b0 }}}\par\pard
+\cbpat1{{\cf2{}}	{\cf11{\b \{\b0 }} }\par\pard
+\cbpat1{{\cf2{	 name}} {\cf11{\b =\b0 }} {\cf2{NULL}}{\cf11{\b ;\b0 }} }\par\pard
+\cbpat1{{\cf2{}}	{\cf11{\b \}\b0 }}}\par\pard
+\cbpat1{{\cf2{}}	{\cf15{Graduate}}{\cf2{}}{\cf11{\b ::\b0 }}{\cf2{}}{\cf16{Graduate}}{\cf2{}}{\cf11{\b (\b0 }}{\cf2{}}{\cf14{\b bool\b0 }} {\cf2{gender}}{\cf11{\b ,\b0 }} {\cf2{}}{\cf14{\b char\b0 }}{\cf2{}}{\cf11{\b *\b0 }} {\cf2{name}}{\cf11{\b ,\b0 }} {\cf2{}}{\cf14{\b char\b0 }} {\cf2{id}}{\cf11{\b [],\b0 }} {\cf2{}}{\cf14{\b const double\b0 }} {\cf2{score{1}}}{\cf11{\b ,\b0 }} {\cf2{string research}}{\cf11{\b ,\b0 }} {\cf2{string tutor}}{\cf11{\b ) :\b0 }} {\cf2{}}{\cf16{score}}{\cf2{}}{\cf11{\b (\b0 }}{\cf2{score{1}}}{\cf11{\b )\b0 }} }\par\pard
+\cbpat1{{\cf2{}}	{\cf11{\b \{\b0 }} }\par\pard
+\cbpat1{{\cf2{		total_score}} {\cf11{\b +=\b0 }} {\cf2{score}}{\cf11{\b ;\b0 }} }\par\pard
+\cbpat1{{\cf2{}}		{\cf13{\b this\b0 }}{\cf2{}}{\cf11{\b ->\b0 }}{\cf2{gender}} {\cf11{\b =\b0 }} {\cf2{gender}}{\cf11{\b ;\b0 }}}\par\pard
+\cbpat1{{\cf2{}}		{\cf14{\b int\b0 }} {\cf2{l}} {\cf11{\b =\b0 }} {\cf2{}}{\cf16{strlen}}{\cf2{}}{\cf11{\b (\b0 }}{\cf2{name}}{\cf11{\b );\b0 }} }\par\pard
+\cbpat1{{\cf2{}}		{\cf13{\b if\b0 }} {\cf2{}}{\cf11{\b (\b0 }}{\cf2{l}} {\cf11{\b !=\b0 }} {\cf2{}}{\cf4{\b {0}\b0 }}{\cf2{}}{\cf11{\b ) \{\b0 }} }\par\pard
+\cbpat1{{\cf2{}}			{\cf13{\b this\b0 }}{\cf2{}}{\cf11{\b ->\b0 }}{\cf2{name}} {\cf11{\b =\b0 }} {\cf2{}}{\cf13{\b new\b0 }} {\cf2{}}{\cf14{\b char\b0 }}{\cf2{}}{\cf11{\b [\b0 }}{\cf2{l}} {\cf11{\b +\b0 }} {\cf2{}}{\cf4{\b {1}\b0 }}{\cf2{}}{\cf11{\b ];\b0 }} }\par\pard
+\cbpat1{{\cf2{}}			{\cf16{strcpy}}{\cf2{}}{\cf11{\b (\b0 }}{\cf2{}}{\cf13{\b this\b0 }}{\cf2{}}{\cf11{\b ->\b0 }}{\cf2{name}}{\cf11{\b ,\b0 }} {\cf2{name}}{\cf11{\b );\b0 }} }\par\pard
+\cbpat1{{\cf2{}}		{\cf11{\b \}\b0 }} }\par\pard
+\cbpat1{{\cf2{}}		{\cf13{\b else\b0 }} }\par\pard
+\cbpat1{{\cf2{}}			{\cf13{\b this\b0 }}{\cf2{}}{\cf11{\b ->\b0 }}{\cf2{name}} {\cf11{\b =\b0 }} {\cf2{NULL}}{\cf11{\b ;\b0 }} }\par\pard
+\cbpat1{{\cf2{}}		{\cf16{strcpy}}{\cf2{}}{\cf11{\b (\b0 }}{\cf2{}}{\cf13{\b this\b0 }}{\cf2{}}{\cf11{\b ->\b0 }}{\cf2{id}}{\cf11{\b ,\b0 }} {\cf2{id}}{\cf11{\b );\b0 }}}\par\pard
+\cbpat1{{\cf2{}}		{\cf13{\b this\b0 }}{\cf2{}}{\cf11{\b ->\b0 }}{\cf2{research}} {\cf11{\b =\b0 }} {\cf2{research}}{\cf11{\b ;\b0 }} }\par\pard
+\cbpat1{{\cf2{}}		{\cf13{\b this\b0 }}{\cf2{}}{\cf11{\b ->\b0 }}{\cf2{tutor}} {\cf11{\b =\b0 }} {\cf2{tutor}}{\cf11{\b ;\b0 }} }\par\pard
+\cbpat1{{\cf2{}}	{\cf11{\b \}\b0 }} }\par\pard
+\cbpat1{{\cf2{}}	{\cf15{Graduate}}{\cf2{}}{\cf11{\b ::\b0 }}{\cf2{}}{\cf16{Graduate}}{\cf2{}}{\cf11{\b (\b0 }}{\cf2{}}{\cf14{\b const\b0 }} {\cf2{Graduate}}{\cf11{\b &\b0 }} {\cf2{tmp}}{\cf11{\b ) :\b0 }} {\cf2{}}{\cf16{score}}{\cf2{}}{\cf11{\b (\b0 }}{\cf2{tmp}}{\cf11{\b .\b0 }}{\cf2{score}}{\cf11{\b )\b0 }} }\par\pard
+\cbpat1{{\cf2{}}	{\cf11{\b \{\b0 }} }\par\pard
+\cbpat1{{\cf2{		total_score}} {\cf11{\b +=\b0 }} {\cf2{score}}{\cf11{\b ;\b0 }} }\par\pard
+\cbpat1{{\cf2{}}		{\cf13{\b this\b0 }}{\cf2{}}{\cf11{\b ->\b0 }}{\cf2{gender}} {\cf11{\b =\b0 }} {\cf2{tmp}}{\cf11{\b .\b0 }}{\cf2{gender}}{\cf11{\b ;\b0 }} }\par\pard
+\cbpat1{{\cf2{}}		{\cf14{\b int\b0 }} {\cf2{l}} {\cf11{\b =\b0 }} {\cf2{}}{\cf16{strlen}}{\cf2{}}{\cf11{\b (\b0 }}{\cf2{tmp}}{\cf11{\b .\b0 }}{\cf2{name}}{\cf11{\b );\b0 }} }\par\pard
+\cbpat1{{\cf2{}}		{\cf13{\b if\b0 }} {\cf2{}}{\cf11{\b (\b0 }}{\cf2{l}} {\cf11{\b !=\b0 }} {\cf2{}}{\cf4{\b {0}\b0 }}{\cf2{}}{\cf11{\b ) \{\b0 }} }\par\pard
+\cbpat1{{\cf2{}}			{\cf13{\b this\b0 }}{\cf2{}}{\cf11{\b ->\b0 }}{\cf2{name}} {\cf11{\b =\b0 }} {\cf2{}}{\cf13{\b new\b0 }} {\cf2{}}{\cf14{\b char\b0 }}{\cf2{}}{\cf11{\b [\b0 }}{\cf2{l}} {\cf11{\b +\b0 }} {\cf2{}}{\cf4{\b {1}\b0 }}{\cf2{}}{\cf11{\b ];\b0 }}}\par\pard
+\cbpat1{{\cf2{}}			{\cf16{strcpy}}{\cf2{}}{\cf11{\b (\b0 }}{\cf2{}}{\cf13{\b this\b0 }}{\cf2{}}{\cf11{\b ->\b0 }}{\cf2{name}}{\cf11{\b ,\b0 }} {\cf2{tmp}}{\cf11{\b .\b0 }}{\cf2{name}}{\cf11{\b );\b0 }} }\par\pard
+\cbpat1{{\cf2{}}		{\cf11{\b \}\b0 }}}\par\pard
+\cbpat1{{\cf2{}}		{\cf13{\b else\b0 }} }\par\pard
+\cbpat1{{\cf2{}}			{\cf13{\b this\b0 }}{\cf2{}}{\cf11{\b ->\b0 }}{\cf2{name}} {\cf11{\b =\b0 }} {\cf2{NULL}}{\cf11{\b ;\b0 }} }\par\pard
+\cbpat1{{\cf2{}}		{\cf16{strcpy}}{\cf2{}}{\cf11{\b (\b0 }}{\cf2{}}{\cf13{\b this\b0 }}{\cf2{}}{\cf11{\b ->\b0 }}{\cf2{id}}{\cf11{\b ,\b0 }} {\cf2{tmp}}{\cf11{\b .\b0 }}{\cf2{id}}{\cf11{\b );\b0 }} }\par\pard
+\cbpat1{{\cf2{}}		{\cf13{\b this\b0 }}{\cf2{}}{\cf11{\b ->\b0 }}{\cf2{research}} {\cf11{\b =\b0 }} {\cf2{tmp}}{\cf11{\b .\b0 }}{\cf2{research}}{\cf11{\b ;\b0 }} }\par\pard
+\cbpat1{{\cf2{}}		{\cf13{\b this\b0 }}{\cf2{}}{\cf11{\b ->\b0 }}{\cf2{tutor}} {\cf11{\b =\b0 }} {\cf2{tmp}}{\cf11{\b .\b0 }}{\cf2{tutor}}{\cf11{\b ;\b0 }} }\par\pard
+\cbpat1{{\cf2{}}	{\cf11{\b \}\b0 }} }\par\pard
+\cbpat1{{\cf2{}}	{\cf15{Graduate}}{\cf2{}}{\cf11{\b ::~\b0 }}{\cf2{}}{\cf16{Graduate}}{\cf2{}}{\cf11{\b ()\b0 }} }\par\pard
+\cbpat1{{\cf2{}}	{\cf11{\b \{\b0 }}}\par\pard
+\cbpat1{{\cf2{}}		{\cf13{\b if\b0 }} {\cf2{}}{\cf11{\b (\b0 }}{\cf2{name}} {\cf11{\b !=\b0 }} {\cf2{NULL}}{\cf11{\b )\b0 }} {\cf2{}}{\cf13{\b delete\b0 }}{\cf2{}}{\cf11{\b []\b0 }}{\cf2{name}}{\cf11{\b ;\b0 }}}\par\pard
+\cbpat1{{\cf2{}}	{\cf11{\b \}\b0 }}}\par\pard
+\cbpat1{{\cf2{}}	{\cf14{\b void\b0 }} {\cf2{}}{\cf15{Graduate}}{\cf2{}}{\cf11{\b ::\b0 }}{\cf2{}}{\cf16{Display_Name}}{\cf2{}}{\cf11{\b ()\b0 }} }\par\pard
+\cbpat1{{\cf2{}}	{\cf11{\b \{\b0 }}}\par\pard
+\cbpat1{{\cf2{		cout}} {\cf11{\b <<\b0 }} {\cf2{name}} {\cf11{\b <<\b0 }} {\cf2{endl}}{\cf11{\b ;\b0 }} }\par\pard
+\cbpat1{{\cf2{}}	{\cf11{\b \}\b0 }} }\par\pard
+\cbpat1{{\cf2{}}	{\cf14{\b void\b0 }} {\cf2{}}{\cf15{Graduate}}{\cf2{}}{\cf11{\b ::\b0 }}{\cf2{}}{\cf16{Display_Gender}}{\cf2{}}{\cf11{\b ()\b0 }} }\par\pard
+\cbpat1{{\cf2{}}	{\cf11{\b \{\b0 }} }\par\pard
+\cbpat1{{\cf2{}}		{\cf13{\b if\b0 }} {\cf2{}}{\cf11{\b (\b0 }}{\cf2{gender}}{\cf11{\b )\b0 }} {\cf2{cout}} {\cf11{\b <<\b0 }} {\cf2{}}{\cf3{"\u272?"}}{\cf2{}} {\cf11{\b <<\b0 }} {\cf2{endl}}{\cf11{\b ;\b0 }} }\par\pard
+\cbpat1{{\cf2{}}		{\cf13{\b else\b0 }} {\cf2{cout}} {\cf11{\b <<\b0 }} {\cf2{}}{\cf3{"\u366?"}}{\cf2{}} {\cf11{\b <<\b0 }} {\cf2{endl}}{\cf11{\b ;\b0 }} }\par\pard
+\cbpat1{{\cf2{}}	{\cf11{\b \}\b0 }} }\par\pard
+\cbpat1{{\cf2{}}	{\cf14{\b void\b0 }} {\cf2{}}{\cf15{Graduate}}{\cf2{}}{\cf11{\b ::\b0 }}{\cf2{}}{\cf16{Display_Id}}{\cf2{}}{\cf11{\b ()\b0 }} }\par\pard
+\cbpat1{{\cf2{}}	{\cf11{\b \{\b0 }} }\par\pard
+\cbpat1{{\cf2{		cout}} {\cf11{\b <<\b0 }} {\cf2{id}} {\cf11{\b <<\b0 }} {\cf2{endl}}{\cf11{\b ;\b0 }} }\par\pard
+\cbpat1{{\cf2{}}	{\cf11{\b \}\b0 }} }\par\pard
+\cbpat1{{\cf2{}}	{\cf14{\b void\b0 }} {\cf2{}}{\cf15{Graduate}}{\cf2{}}{\cf11{\b ::\b0 }}{\cf2{}}{\cf16{Display_Score}}{\cf2{}}{\cf11{\b ()\b0 }} }\par\pard
+\cbpat1{{\cf2{}}	{\cf11{\b \{\b0 }} }\par\pard
+\cbpat1{{\cf2{		cout}} {\cf11{\b <<\b0 }} {\cf2{score}} {\cf11{\b <<\b0 }} {\cf2{endl}}{\cf11{\b ;\b0 }} }\par\pard
+\cbpat1{{\cf2{}}	{\cf11{\b \}\b0 }} }\par\pard
+\cbpat1{{\cf2{}}	{\cf14{\b void\b0 }} {\cf2{}}{\cf15{Graduate}}{\cf2{}}{\cf11{\b ::\b0 }}{\cf2{}}{\cf16{Display_research}}{\cf2{}}{\cf11{\b ()\b0 }} }\par\pard
+\cbpat1{{\cf2{}}	{\cf11{\b \{\b0 }} }\par\pard
+\cbpat1{{\cf2{		cout}} {\cf11{\b <<\b0 }} {\cf2{research}} {\cf11{\b <<\b0 }} {\cf2{endl}}{\cf11{\b ;\b0 }} }\par\pard
+\cbpat1{{\cf2{}}	{\cf11{\b \}\b0 }} }\par\pard
+\cbpat1{{\cf2{}}	{\cf14{\b void\b0 }} {\cf2{}}{\cf15{Graduate}}{\cf2{}}{\cf11{\b ::\b0 }}{\cf2{}}{\cf16{Display_tutor}}{\cf2{}}{\cf11{\b ()\b0 }}}\par\pard
+\cbpat1{{\cf2{}}	{\cf11{\b \{\b0 }} }\par\pard
+\cbpat1{{\cf2{		cout}} {\cf11{\b <<\b0 }} {\cf2{tutor}} {\cf11{\b <<\b0 }} {\cf2{endl}}{\cf11{\b ;\b0 }} }\par\pard
+\cbpat1{{\cf2{}}	{\cf11{\b \}\b0 }} }\par\pard
+\cbpat1{{\cf2{}}	{\cf14{\b void\b0 }} {\cf2{}}{\cf15{Graduate}}{\cf2{}}{\cf11{\b ::\b0 }}{\cf2{}}{\cf16{Display_Name}}{\cf2{}}{\cf11{\b ()\b0 }} {\cf2{}}{\cf14{\b const\b0 }} }\par\pard
+\cbpat1{{\cf2{}}	{\cf11{\b \{\b0 }} }\par\pard
+\cbpat1{{\cf2{		cout}} {\cf11{\b <<\b0 }} {\cf2{name}} {\cf11{\b <<\b0 }} {\cf2{endl}}{\cf11{\b ;\b0 }} }\par\pard
+\cbpat1{{\cf2{}}	{\cf11{\b \}\b0 }} }\par\pard
+\cbpat1{{\cf2{}}	{\cf14{\b void\b0 }} {\cf2{}}{\cf15{Graduate}}{\cf2{}}{\cf11{\b ::\b0 }}{\cf2{}}{\cf16{Display_Gender}}{\cf2{}}{\cf11{\b ()\b0 }} {\cf2{}}{\cf14{\b const\b0 }}}\par\pard
+\cbpat1{{\cf2{}}	{\cf11{\b \{\b0 }}}\par\pard
+\cbpat1{{\cf2{}}		{\cf13{\b if\b0 }} {\cf2{}}{\cf11{\b (\b0 }}{\cf2{gender}}{\cf11{\b )\b0 }} {\cf2{cout}} {\cf11{\b <<\b0 }} {\cf2{}}{\cf3{"\u272?"}}{\cf2{}} {\cf11{\b <<\b0 }} {\cf2{endl}}{\cf11{\b ;\b0 }}}\par\pard
+\cbpat1{{\cf2{}}		{\cf13{\b else\b0 }} {\cf2{cout}} {\cf11{\b <<\b0 }} {\cf2{}}{\cf3{"\u366?"}}{\cf2{}} {\cf11{\b <<\b0 }} {\cf2{endl}}{\cf11{\b ;\b0 }}}\par\pard
+\cbpat1{{\cf2{}}	{\cf11{\b \}\b0 }}}\par\pard
+\cbpat1{{\cf2{}}		{\cf14{\b void\b0 }} {\cf2{}}{\cf15{Graduate}}{\cf2{}}{\cf11{\b ::\b0 }}{\cf2{}}{\cf16{Display_Id}}{\cf2{}}{\cf11{\b ()\b0 }} {\cf2{}}{\cf14{\b const\b0 }} }\par\pard
+\cbpat1{{\cf2{}}		{\cf11{\b \{\b0 }} }\par\pard
+\cbpat1{{\cf2{			cout}} {\cf11{\b <<\b0 }} {\cf2{id}} {\cf11{\b <<\b0 }} {\cf2{endl}}{\cf11{\b ;\b0 }} }\par\pard
+\cbpat1{{\cf2{}}		{\cf11{\b \}\b0 }} }\par\pard
+\cbpat1{{\cf2{}}		{\cf14{\b void\b0 }} {\cf2{}}{\cf15{Graduate}}{\cf2{}}{\cf11{\b ::\b0 }}{\cf2{}}{\cf16{Display_Score}}{\cf2{}}{\cf11{\b ()\b0 }} {\cf2{}}{\cf14{\b const\b0 }} }\par\pard
+\cbpat1{{\cf2{}}		{\cf11{\b \{\b0 }} }\par\pard
+\cbpat1{{\cf2{			cout}} {\cf11{\b <<\b0 }} {\cf2{score}} {\cf11{\b <<\b0 }} {\cf2{endl}}{\cf11{\b ;\b0 }} }\par\pard
+\cbpat1{{\cf2{}}		{\cf11{\b \}\b0 }}}\par\pard
+\cbpat1{{\cf2{}}		{\cf14{\b void\b0 }} {\cf2{}}{\cf15{Graduate}}{\cf2{}}{\cf11{\b ::\b0 }}{\cf2{}}{\cf16{Display_research}}{\cf2{}}{\cf11{\b ()\b0 }} {\cf2{}}{\cf14{\b const\b0 }} }\par\pard
+\cbpat1{{\cf2{}}		{\cf11{\b \{\b0 }} }\par\pard
+\cbpat1{{\cf2{			cout}} {\cf11{\b <<\b0 }} {\cf2{research}} {\cf11{\b <<\b0 }} {\cf2{endl}}{\cf11{\b ;\b0 }} }\par\pard
+\cbpat1{{\cf2{}}		{\cf11{\b \}\b0 }} }\par\pard
+\cbpat1{{\cf2{}}		{\cf14{\b void\b0 }} {\cf2{}}{\cf15{Graduate}}{\cf2{}}{\cf11{\b ::\b0 }}{\cf2{}}{\cf16{Display_tutor}}{\cf2{}}{\cf11{\b ()\b0 }} {\cf2{}}{\cf14{\b const\b0 }} }\par\pard
+\cbpat1{{\cf2{}}		{\cf11{\b \{\b0 }} }\par\pard
+\cbpat1{{\cf2{			cout}} {\cf11{\b <<\b0 }} {\cf2{tutor}} {\cf11{\b <<\b0 }} {\cf2{endl}}{\cf11{\b ;\b0 }} }\par\pard
+\cbpat1{{\cf2{}}		{\cf11{\b \}\b0 }} }\par\pard
+\cbpat1{{\cf2{}}		{\cf14{\b void\b0 }} {\cf2{}}{\cf15{Graduate}}{\cf2{}}{\cf11{\b ::\b0 }}{\cf2{}}{\cf16{Display_total_score}}{\cf2{}}{\cf11{\b ()\b0 }} }\par\pard
+\cbpat1{{\cf2{}}		{\cf11{\b \{\b0 }} }\par\pard
+\cbpat1{{\cf2{			cout}} {\cf11{\b <<\b0 }} {\cf2{total_score}} {\cf11{\b <<\b0 }} {\cf2{endl}}{\cf11{\b ;\b0 }} }\par\pard
+\cbpat1{{\cf2{}}		{\cf11{\b \}\b0 }} }\par\pard
+\cbpat1{{\cf2{}}		{\cf14{\b void\b0 }} {\cf2{}}{\cf16{Display_rank}}{\cf2{}}{\cf11{\b (\b0 }}{\cf2{}}{\cf14{\b const\b0 }} {\cf2{Graduate}}{\cf11{\b &\b0 }} {\cf2{tmp}}{\cf11{\b )\b0 }} }\par\pard
+\cbpat1{{\cf2{}}		{\cf11{\b \{\b0 }} }\par\pard
+\cbpat1{{\cf2{}}			{\cf13{\b if\b0 }} {\cf2{}}{\cf11{\b (\b0 }}{\cf2{tmp}}{\cf11{\b .\b0 }}{\cf2{score}} {\cf11{\b >=\b0 }} {\cf2{}}{\cf4{\b {9}{0}\b0 }}{\cf2{}}{\cf11{\b )\b0 }} {\cf2{cout}} {\cf11{\b <<\b0 }} {\cf2{}}{\cf3{"A"}}{\cf2{}} {\cf11{\b <<\b0 }} {\cf2{endl}}{\cf11{\b ;\b0 }} }\par\pard
+\cbpat1{{\cf2{}}			{\cf13{\b else if\b0 }} {\cf2{}}{\cf11{\b (\b0 }}{\cf2{tmp}}{\cf11{\b .\b0 }}{\cf2{score}} {\cf11{\b >=\b0 }} {\cf2{}}{\cf4{\b {8}{0}\b0 }}{\cf2{}}{\cf11{\b )\b0 }} {\cf2{cout}} {\cf11{\b <<\b0 }} {\cf2{}}{\cf3{"B"}}{\cf2{}} {\cf11{\b <<\b0 }} {\cf2{endl}}{\cf11{\b ;\b0 }} }\par\pard
+\cbpat1{{\cf2{}}			{\cf13{\b else if\b0 }} {\cf2{}}{\cf11{\b (\b0 }}{\cf2{tmp}}{\cf11{\b .\b0 }}{\cf2{score}} {\cf11{\b >=\b0 }} {\cf2{}}{\cf4{\b {7}{0}\b0 }}{\cf2{}}{\cf11{\b )\b0 }} {\cf2{cout}} {\cf11{\b <<\b0 }} {\cf2{}}{\cf3{"C"}}{\cf2{}} {\cf11{\b <<\b0 }} {\cf2{endl}}{\cf11{\b ;\b0 }} }\par\pard
+\cbpat1{{\cf2{}}			{\cf13{\b else if\b0 }} {\cf2{}}{\cf11{\b (\b0 }}{\cf2{tmp}}{\cf11{\b .\b0 }}{\cf2{score}} {\cf11{\b >=\b0 }} {\cf2{}}{\cf4{\b {6}{0}\b0 }}{\cf2{}}{\cf11{\b )\b0 }} {\cf2{cout}} {\cf11{\b <<\b0 }} {\cf2{}}{\cf3{"D"}}{\cf2{}} {\cf11{\b <<\b0 }} {\cf2{endl}}{\cf11{\b ;\b0 }} }\par\pard
+\cbpat1{{\cf2{}}			{\cf13{\b else\b0 }} {\cf2{cout}} {\cf11{\b <<\b0 }} {\cf2{}}{\cf3{"E"}}{\cf2{}} {\cf11{\b <<\b0 }} {\cf2{endl}}{\cf11{\b ;\b0 }} }\par\pard
+\cbpat1{{\cf2{}}		{\cf11{\b \}\b0 }}}\par\pard
+\cbpat1{{\cf2{}}}\par\pard
+\cbpat1{{\cf2{}}{\cf11{\b \}\b0 }} {\cf2{}}}\par\pard
+\cbpat1{}}
